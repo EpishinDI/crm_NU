@@ -1,0 +1,14 @@
+include head
+include header
+div(class="row")
+	include left-menu
+	div(class="col")
+		div(class="row")
+			a(
+			class='menu-a'
+			href="/new-client"
+			) Новый клиент
+		div(class="col")
+			each val, index in clientele
+				ul
+					li #{val['lastName']} #{val['firstName']} #{val['middName']} #{val['middName']} #{val['email']} #{val['phone']}

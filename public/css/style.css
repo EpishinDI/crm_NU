@@ -1,3 +1,93 @@
+@import '/css/fonts.css';
 *{
-	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: Roboto;
+	color: #2d3a72;
 }
+
+* a{
+	text-decoration: none;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.col{
+	display: flex;
+	flex-direction: column;
+}
+
+* li{
+	list-style-type: none;
+}
+
+/*--------------------------------HEADER CSS START-------------------------------------*/
+
+.header{
+	display: flex;
+	background-color: #F5CD6D;
+	height: 50px;
+	align-items: center;
+}
+.logo-a{
+	margin-left: 30px;
+	text-transform: uppercase;
+}
+.search-wrap{
+	margin-left: 60px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #FAE3AD;
+	
+}
+.search-select{
+	border: none;
+	height: 20px;
+	background-color: #FAE3AD;
+	outline: none;
+}
+.search-input{
+	border: none;
+	height: 20px;
+	background-color: #FAE3AD;
+	outline: none;
+}
+.search-btn{
+	padding-left: 10px;
+}
+
+/*--------------------------------HEADER CSS END-------------------------------------*/
+
+/*--------------------------------LEFT MENU CSS START--------------------------------*/
+.left-menu{
+	display: flex;
+}
+.menu-group{
+	display: flex;
+	flex-direction: column;
+	background-color: #FAE3AD;
+	padding: 15px 15px 0 30px;
+}
+.menu-ul{
+	margin-top: 15px;
+}
+.menu-li{
+	margin-bottom: 10px;
+}
+.new-client-wrap{
+	align-items: center;
+}
+.new-client-i{
+	padding: 10px;
+	border: 1px solid black;
+}
+/*--------------------------------LEFT MENU CSS END  --------------------------------*/
+
+/*--------------------------------FOOTER CSS START  ---------------------------------*/
+
+.footer{
+	background-color: #546096;
+	height: 100px;
+}
+/*--------------------------------FOOTER CSS END  -----------------------------------*/

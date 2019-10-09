@@ -1,0 +1,61 @@
+include head
+include header
+div(class="row")
+	include left-menu
+	form(class="col")
+		h3 Личные данные
+
+		div(class="form-group col")
+			label(for="inputEmail4") Фамилия
+			input(
+				type="text"
+				class="form-control"
+				id="lastName"
+				placeholder="Путин"
+				)
+		div(class="form-group col")
+			label(
+				for="inputEmail4") Имя
+			input(
+				type="text"
+				class="form-control"
+				id="firstName"
+				placeholder="Владимир"
+				)
+		div(class="form-group col")
+			label(for="inputEmail4") Отчество
+			input(
+				type="text"
+				class="form-control"
+				id="middleName"
+				placeholder="Владимирович"
+				)
+		h3 Контакты
+
+		div(class="form-group col")
+			label(for="inputEmail4") Email
+			input(
+				type="email"
+				class="form-control"
+				id="clientEmail"
+				placeholder="Email"
+				)
+
+		div(class="form-group col")
+			label(for="inputEmail4") Телефон
+			input(
+				type="text"
+				class="form-control"
+				id="clientPhone"
+				placeholder="+79876543210"
+				)
+		button(
+			type="button"
+			class="btn btn-primary"
+			class="btnPreliminaryForm"
+			) Сохранить
+		button(
+			type="button"
+			class="btn btn-primary"
+			class="btnCansel"
+			) Отмена
