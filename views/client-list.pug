@@ -4,41 +4,42 @@ div(class="wraper")
 	div(class="row test")
 		include left-menu
 		div(class=" tadle-wrap")
-				a(
-				class='menu-a'
-				href="/new-client"
-				) Новый клиент
+			div(class="add-client-wrap")
+				include new-client
+			h4(
+			class='show-add-client-form'
+			) Новый клиент
+			div(class="col")
+				div(class="table-index row")
+					div(class="cell id-col col")
+						h3 id
+					div(class="cell date-col col")
+						h3 Дата 
+					div(class="cell lastName-col col")
+						h3 Фамилия
+					div(class="cell firstName-col col")
+						h3 Имя
+					div(class="cell middName-col col")
+						h3 Отчество
+					div(class="cell phone-col col")
+						h3 Телефон
+					div(class="cell email-col col")
+						h3 e-mail
 				div(class="col")
-					div(class="table-index row")
-						div(class="cell id-col col")
-							h3 id
-						div(class="cell date-col col")
-							h3 Дата 
-						div(class="cell lastName-col col")
-							h3 Фамилия
-						div(class="cell firstName-col col")
-							h3 Имя
-						div(class="cell middName-col col")
-							h3 Отчество
-						div(class="cell phone-col col")
-							h3 Телефон
-						div(class="cell email-col col")
-							h3 e-mail
-					div(class="col")
-						ul
-						each val, index in clientele
-							li(class="row table-row")
-								div(class="cell id-col col")
-									h4 #{val['id']}
-								div(class="cell date-col col")
-									h4 #{val['date']} 
-								div(class="cell lastName-col col")
-									h4 #{val['lastName']}
-								div(class="cell firstName-col col")
-									h4 #{val['firstName']}
-								div(class="cell middName-col col")
-									h4 #{val['middName']}
-								div(class="cell phone-col col")
-									h4 #{val['phone']}
-								div(class="cell email-col col")
-									h4 #{val['email']}
+					ul
+					each val, index in clientele
+						li(class="row table-row")
+							div(class="cell id-col col")
+								h4 #{val['id']}
+							div(class="cell date-col col")
+								h4 #{val['date']} 
+							div(class="cell lastName-col col")
+								h4 #{val['lastName']}
+							div(class="cell firstName-col col")
+								h4 #{val['firstName']}
+							div(class="cell middName-col col")
+								h4 #{val['middName']}
+							div(class="cell phone-col col")
+								h4 #{val['phone']}
+							div(class="cell email-col col")
+								h4 #{val['email']}

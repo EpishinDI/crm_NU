@@ -46,6 +46,8 @@ app.get('/client-list', (req, res) => {
 
 app.post('/send-form', (req, res) => {
 	saveOrder(req.body);
+	res.send({"asdasdasd":"aasdasdasd"});
+	
 });
 
 function saveOrder(data) {

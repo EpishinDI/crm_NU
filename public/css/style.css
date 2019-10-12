@@ -86,7 +86,7 @@
 	display: flex;
 }
 
-.left-menu a{
+.left-menu a {
 	color: black;
 }
 
@@ -131,7 +131,7 @@
 	margin: 0 auto;
 }
 
-.tadle-wrap a{
+.tadle-wrap h4{
 	color: black;
 }
 
@@ -157,3 +157,43 @@ box-shadow: inset 0px 0px 9px -4px rgba(0,0,0,1);
 }
 
 /*--------------------------------CLIENTELE LIST CSS START  -------------------------*/
+
+.add-client-wrap{
+	background: rgba(0, 0, 0, 0.72);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -50px;
+	bottom: 0;
+	display: none;
+	
+}
+.new-client-form{
+	background-color:  #277047;
+	width: 340px;
+	position: absolute;
+	margin: 0 auto;
+	padding: 20px;
+	left: 0;
+	right: 0;
+	top: 100px;
+}
+
+.form-control{
+	color: black;
+	margin-bottom: 10px;
+	height: 40px;
+	font-size: 16px;
+
+}
+.btnPreliminaryForm{
+	margin-top: 10px;
+	color: black;
+	height: 40px;
+	font-size: 16px;
+	width: 100px;
+	cursor: pointer;
+}
+.show-add-client-form{
+	cursor: pointer;
+}
