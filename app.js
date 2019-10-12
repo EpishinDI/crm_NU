@@ -51,6 +51,9 @@ app.post('/send-form', (req, res) => {
 function saveOrder(data) {
 	let sql;
 	let maxId = 0;
+	let date = new Date()
+	let dateNow = date.getDate()+'.'+Number(date.getMonth()+1)+'.'+date.getFullYear()
+	
 	con.query(
 		'SELECT * FROM clientele',
 		(error, result) => {
@@ -62,11 +65,11 @@ function saveOrder(data) {
 	)
 
 
-	sql = "INSERT INTO clientele (id, lastName, firstName, middName, email, phone) VALUES ('" + maxId + "', '" + data.lastName + "', '" + data.firstName + "', '" + data.middleName + "','" + data.clientEmail + "','" + data.clientPhone + "')";
+	sql = "INSERT INTO clientele (id, date, lastName, firstName, middName, email, phone) VALUES ('" + maxId + "', '" + dateNow + "', '" + data.lastName + "', '" + data.firstName + "', '" + data.middleName + "','" + data.clientEmail + "','" + data.clientPhone + "')";
 	console.log(sql);
 	con.query(sql, function (error, result) {
 		if (error) throw error;
-		console.log("1 record inserted");
+		console.log("1 record inserted. Дата:"+date);
 	});
 }
 
